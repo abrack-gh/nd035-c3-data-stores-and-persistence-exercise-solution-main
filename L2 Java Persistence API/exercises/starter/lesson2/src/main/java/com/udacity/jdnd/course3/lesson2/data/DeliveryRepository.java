@@ -35,5 +35,8 @@ public class DeliveryRepository {
                 .where(cb.equal(root.get("delivery").get("id"), deliveryId));
         return entityManager.createQuery(query).getSingleResult();
     }
+
+    public void persist(Delivery delivery) {
+    }
     /* rest of class unchanged */
 }
